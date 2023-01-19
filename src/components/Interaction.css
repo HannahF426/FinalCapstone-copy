@@ -1,0 +1,175 @@
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 30px;
+}
+
+.picSize{
+    width: 430px;
+    height: 480px;
+    padding: 10px;
+}
+
+.align{
+    padding-left: 30px;
+}
+
+.title{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.center{
+    text-align: left;
+    margin: auto;
+}
+
+.drag{
+    /*
+    border: 2px solid #999;
+    background: linear-gradient(
+            to bottom left,
+            rgba(255, 255, 255, 0.534),
+            rgba(255, 255, 255, 0.534),
+            rgba(255, 255, 255, 0.534)
+    );
+    */
+    line-height: 1px;
+}
+
+.dot{
+    font-size: 130px;
+    line-height: 1px;
+}
+
+.chartName{
+    width: 400px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.IBlock{
+    border: 2px solid #999;
+    /*background-color: #ddd;*/
+    background: linear-gradient(
+            to bottom left,
+            rgba(255, 255, 255, 0.534),
+            rgba(255, 255, 255, 0.534),
+            rgba(255, 255, 255, 0.534)
+    );
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    width: 500px;
+    height: 760px;
+}
+
+.conn{
+    width: 480px;
+    height: 140px;
+    overflow-y: auto;
+    scroll-behavior:smooth;
+    scroll-margin-bottom: inherit;
+    margin: 3% auto auto;
+
+}
+.diagramFormat{
+    display: flex;
+    width: 500px;
+}
+.titles{
+    flex: 50%;
+    flex-direction: column;
+    text-align: center;
+}
+.colTitle{
+    font-size: larger;
+    text-align: center;
+    padding: 5px;
+}
+.leftcol{
+    flex: 65%;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+    scroll-margin-bottom: inherit;
+    margin: 3% auto auto;
+    padding-left: 10px;
+    height: 410px;
+    text-align: left;
+}
+.rightcol{
+    flex:35%;
+    margin: 3% auto auto;
+    padding-left: 10px;
+    height: 410px;
+    text-align: left;
+}
+
+.board{
+    width: 430px;
+    height: 480px;
+    padding: 10px;
+    margin: auto;
+    background-image: url('../../public/images/timing-default.png');
+    background-position: center;
+}
+.row{
+    border-width: 2px;
+    padding-top: 65px;
+    height: 40px;
+    width: 29%;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.tileText{
+    text-align: center;
+    justify-content: center;
+    /*background-color: #999999;*/
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 5px;
+    width: 40px;
+    transition: all .3s ease-in-out;
+}
+.tileText:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.flexboxX{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 20px;
+}
+
+.flexboxButtons{
+    display: flex;
+    width: 90px;
+    margin: auto;
+    flex-direction: row;
+}
+
+.resetButton{
+    margin-left: 10px;
+}
+
+.addSpace{
+    padding: 29px;
+}
+.addLittleSpace{
+    padding: 10px;
+}
+.checkBoxs{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 10px;
+}
+.lampvec{
+    flex: 50%;
+
+}

@@ -1,0 +1,31 @@
+.title{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.info {
+    font-size: 10px;
+}
+
+.post{
+    border: 2px solid #999;
+    /*background-color: #ddd;*/
+    background: linear-gradient(
+      to bottom left, 
+      rgba(255, 255, 255, 0.534),
+      rgba(255, 255, 255, 0.534),
+      rgba(255, 255, 255, 0.534)
+    );
+    margin: auto;
+    margin: 10px;
+    padding: 15px;
+    /*text-align: center;*/
+}
+
+.postScroll{
+    overflow-y: scroll;
+    height: 300px;
+    border: 2px solid #bbb;
+    padding: 15px;
+    /*text-align: center;*/
+}

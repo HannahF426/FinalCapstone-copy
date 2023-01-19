@@ -1,0 +1,17 @@
+.link {
+    color:white;
+    transition: all .5s ease-in-out;
+    display: inline-block;
+}
+.link:hover{
+    background: linear-gradient(
+      to left, 
+      rgb(109, 245, 255), 
+      rgb(239, 118, 255)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.1);
+    /*text-decoration: none;
+    color:rgb(77, 247, 253);*/
+}

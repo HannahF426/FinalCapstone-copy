@@ -1,0 +1,81 @@
+{
+  "_id": {
+    "$oid": "625c3a998d3ea2f2317f5903"
+  },
+  "name": "fifo total-order",
+  "nodes": {
+    "A": {
+
+        "a": {
+          "lamport": "(1,A)",
+          "vector": "<1,0,0>",
+          "send_receive": "send",
+          "other_node": ["e", "h"]
+        },
+        "b": {
+          "lamport": "(2,A)",
+          "vector": "<2,0,0>",
+          "send_receive": "send",
+          "other_node": ["d", "g", "j"]
+        },
+        "c": {
+          "lamport": "(4,A)",
+          "vector": "<3,2,0>",
+          "send_receive": "receive",
+          "other_node": ["f"]
+        },
+        "b2": {
+          "lamport": "(5,A)",
+          "vector": "<4,3,0>",
+          "send_receive": "receive",
+          "other_node": ["b"]
+        }
+
+    },
+    "B": {
+
+        "d": {
+          "lamport": "(2,B)",
+          "vector": "<1,1,0>",
+          "send_receive": "receive",
+          "other_node": ["a"]
+        },
+        "e": {
+          "lamport": "(3,B)",
+          "vector": "<1,2,0>",
+          "send_receive": "send",
+          "other_node": ["c", "h"]
+        },
+        "f": {
+          "lamport": "(4,B)",
+          "vector": "<2,3,0>",
+          "send_receive": "receive",
+          "other_node": ["b"]
+        }
+
+    },
+    "C": {
+
+        "g": {
+          "lamport": "(2,C)",
+          "vector": "<1,0,1>",
+          "send_receive": "receive",
+          "other_node": ["a"]
+        },
+        "h": {
+          "lamport": "(4,C)",
+          "vector": "<1,2,2>",
+          "send_receive": "receive",
+          "other_node": ["e"]
+        },
+        "i": {
+          "lamport": "(5,C)",
+          "vector": "<2,2,3>",
+          "send_receive": "receive",
+          "other_node": ["b"]
+        }
+
+    }
+  },
+  "definition": "combination of fifo broadcast and total order broadcast, thus:\nif m1 and m2 are broadcast by the same node, and\nbroadcast(m1) → broadcast(m2), then m1 must be delivered\nbefore m2.\nand\nif m1 is delivered before m2 on one node, then m1 must be\ndelivered before m2 on all nodes."
+}

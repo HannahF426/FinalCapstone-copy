@@ -1,0 +1,23 @@
+.form-input{
+    margin: 10px 0;
+}
+
+.testPost{
+    border: 2px solid #999;
+    /*background-color: #ddd;*/
+    background: linear-gradient(
+            to bottom left,
+            rgba(255, 255, 255, 0.534),
+            rgba(255, 255, 255, 0.534),
+            rgba(255, 255, 255, 0.534)
+    );
+
+    margin: auto;
+    margin: 10px;
+    /*text-align: center;*/
+}
+
+.form-input input, .form-input textarea {
+    width: 50%;
+    outline: none;
+}

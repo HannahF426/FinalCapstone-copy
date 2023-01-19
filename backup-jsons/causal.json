@@ -1,0 +1,69 @@
+{
+  "_id": {
+    "$oid": "625c35a68d3ea2f2317f5901"
+  },
+  "name": "causal",
+  "nodes": {
+    "A": {
+        "a": {
+          "lamport": "(1,A)",
+          "vector": "<1,0,0>",
+          "send_receive": "send",
+          "other_node": ["d", "g"]
+        },
+        "b": {
+          "lamport": "(2, A)",
+          "vector": "<2,0,0>",
+          "send_receive": "send",
+          "other_node": ["h", "f"]
+        },
+        "c": {
+          "lamport": "(4,A)",
+          "vector": "<3,2,0",
+          "send_receive": "receive",
+          "other_node": ["e"]
+        }
+    },
+    "B": {
+        "d": {
+          "lamport": "(2,B)",
+          "vector": "<1,1,0>",
+          "send_receive": "receive",
+          "other_node": ["a"]
+        },
+        "e": {
+          "lamport": "(3,B)",
+          "vector": "<1,2,0>",
+          "send_receive": "send",
+          "other_node": ["c", "i"]
+        },
+        "f": {
+          "lamport": "(4,B)",
+          "vector": "<2,3,0>",
+          "send_receive": "receive",
+          "other_node": ["b"]
+        }
+    },
+    "C": {
+        "g": {
+          "lamport": "(2,C)",
+          "vector": "<1,0,1>",
+          "send_receive": "receive",
+          "other_node": ["a"]
+        },
+        "h": {
+          "lamport": "(3,C)",
+          "vector": "<2,0,2>",
+          "send_receive": "receive",
+          "other_node": ["b"]
+        },
+        "i": {
+          "lamport": "(4,C)",
+          "vector": "<2,2,3>",
+          "send_receive": "receive",
+          "other_node": ["e"]
+        }
+    }
+  },
+  "definition": "if broadcast(m1) → broadcast(m2) then m1 must be delivered\nbefore m2"
+}

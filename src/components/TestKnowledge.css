@@ -1,0 +1,54 @@
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 30px;
+}
+
+.title{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.IBlockTest{
+    border: 2px solid #999;
+    /*background-color: #ddd;*/
+    background: linear-gradient(
+            to bottom left,
+            rgba(255, 255, 255, 0.534),
+            rgba(255, 255, 255, 0.534),
+            rgba(255, 255, 255, 0.534)
+    );
+    margin: auto;
+    margin-top: 0px;
+    text-align: center;
+    width: 600px;
+    height: 600px;
+    padding: 10px;
+}
+
+.questionText{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.testText{
+    padding: 10px;
+    margin: 7%;
+    font-size: 30px;
+    background: linear-gradient(
+            to bottom left,
+            rgba(255, 255, 255, 0.534),
+            rgba(255, 255, 255, 0.534),
+            rgba(255, 255, 255, 0.534)
+    );
+    transition: all .3s ease-in-out;
+}
+.testText:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.image{
+    padding-top: 20px;
+}

@@ -1,0 +1,29 @@
+.Block{
+    border: 2px solid #999;
+    /*background-color: #ddd;*/
+    background: linear-gradient(
+      to bottom left, 
+      rgba(255, 255, 255, 0.534),
+      rgba(255, 255, 255, 0.534),
+      rgba(255, 255, 255, 0.534)
+    );
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    overflow: auto;
+}
+
+.img{
+
+}
+
+.title{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.Blocktext{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}

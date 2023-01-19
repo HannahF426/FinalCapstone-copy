@@ -1,0 +1,75 @@
+{
+  "_id": {
+    "$oid": "625c371e8d3ea2f2317f5902"
+  },
+  "name": "fifo",
+  "nodes": {
+    "A": {
+
+        "a": {
+          "lamport": "(1,A)",
+          "vector": "<1,0,0>",
+          "send_receive": "send",
+          "other_node": ["d", "h"]
+        },
+        "b": {
+          "lamport": "(4,A)",
+          "vector": "<2,2,0>",
+          "send_receive": "receive",
+          "other_node": ["e"]
+        },
+        "c": {
+          "lamport": "(5,A)",
+          "vector": "<3,2,0>",
+          "send_receive": "send",
+          "other_node": ["f", "i"]
+        }
+
+    },
+    "B": {
+
+        "d": {
+          "lamport": "(2,B)",
+          "vector": "<1,1,0>",
+          "send_receive": "receive",
+          "other_node": ["a"]
+        },
+        "e": {
+          "lamport": "(3,B)",
+          "vector": "<1,2,0>",
+          "send_receive": "send",
+          "other_node": ["b", "g"]
+        },
+        "f": {
+          "lamport": "(6,B)",
+          "vector": "<3,3,0>",
+          "send_receive": "receive",
+          "other_node": ["c"]
+        }
+
+    },
+    "C": {
+
+        "g": {
+          "lamport": "(4,C)",
+          "vector": "<1,2,1>",
+          "send_receive": "receive",
+          "other_node": ["d"]
+        },
+        "h": {
+          "lamport": "(5,C)",
+          "vector": "<1,2,2>",
+          "send_receive": "receive",
+          "other_node": ["a"]
+        },
+        "i": {
+          "lamport": "(6,C)",
+          "vector": "<3,2,3>",
+          "send_receive": "receive",
+          "other_node": ["c"]
+        }
+
+    }
+  },
+  "definition": "if m1 and m2 are broadcast by the same node, and\nbroadcast(m1) → broadcast(m2), then m1 must be delivered\nbefore m2"
+}
